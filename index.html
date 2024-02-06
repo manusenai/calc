@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora senai</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="imagex/png" href="gato.jpg">
+</head>
+
+
+<body>
+
+    <div class="container">
+        <div class="calc">
+            <div class="display">
+                <input type="text" id="display" readonly>
+            </div>
+
+        <div class="teclas">
+        <button onclick="appendToResult('7')">7</button>
+        <button onclick="appendToResult('8')">8</button>
+        <button onclick="appendToResult('9')">9</button>
+        <button onclick="setOperator('+')">+</button>
+        <button onclick="appendToResult('4')">4</button>
+        <button onclick="appendToResult('5')">5</button>
+        <button onclick="appendToResult('6')">6</button>
+        <button onclick="setOperator('-')">-</button>
+        <button onclick="appendToResult('1')">1</button>
+        <button onclick="appendToResult('2')">2</button>
+        <button onclick="appendToResult('3')">3</button>
+        <button onclick="setOperator('*')">*</button>
+        <button onclick="appendToResult('.')">.</button>
+        <button onclick="appendToResult('0')">0</button>
+        <button onclick="clearResult()">CE</button>
+        <button onclick="setOperator('/')">/</button>
+        <button id="equal" onclick="calculate()">=</button>
+        </div>
+
+    </div>
+
+
+        <div class="hist"> <!-- histórico -->
+            <h2>Histórico</h2>
+            <ul id="historico-lista"></ul>
+        </div>
+
+    </div>
+    
+    <script src="script.js"></script> <!-- linkagem js -->
+</body>
+</html>
